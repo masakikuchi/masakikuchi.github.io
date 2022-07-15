@@ -9,32 +9,18 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+You can download my latest CV [here](https://www.dropbox.com/s/qvsr54bvrlbzwxz/CV_July14th2022.pdf?dl=0).
 
-Work experience
-======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
+
+
+<!---Education
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+
+* Ph.D. in Political Science, Washington University in St. Louis, 2027 (expected)
+* M.A. in Political Science, Waseda University, 2021
+* B.A. in Political Science, Waseda University, 2019
+
 
 Publications
 ======
@@ -52,8 +38,5 @@ Teaching
 ======
   <ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+  {% endfor %}</ul>--->
   
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
