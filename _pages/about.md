@@ -10,7 +10,7 @@ redirect_from:
 
 Welcome! I am an incoming PhD student in the [Department of Political Science](https://polisci.wustl.edu/) at [Washington University in St. Louis](https://wustl.edu/). I was previously a Research Fellow for [Japan Society for the Promotion of Science](https://www.jsps.go.jp/english/e-pd/index.html).
 
-My research interests cover the links between international politics and identity, International Relations, and Political Psychology. <!---My work is forthcoming at *Journal of Peace Research*.--->
+My research interests cover the links between international politics and identity, International Relations, and Political Psychology. <!---My work is forthcoming at *Journal of Peace Research*.---> 
 
 I received my BA (2019) and MA (2021) in Political Science from [Waseda University](https://www.waseda.jp/top/en/), Japan. Outside of work, I play the violin and root for Dodgers.
 
