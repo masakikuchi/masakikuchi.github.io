@@ -11,9 +11,9 @@ title                    : "Masanori Kikuchi"
 title_separator          : "-"
 name                     : &name "Masanori Kikuchi"
 description              : &description "personal description"
-url                      : https://masakikuchi.github.io.git # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://masakikuchi.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "masakikuchi.github.io.git"
+repository               : "masakikuchi.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
