@@ -6,5 +6,5 @@ excerpt: ''
 date: October 4, 2021
 venue: 'Socius'
 paperurl: 'https://journals.sagepub.com/doi/full/10.1177/23780231211048023'
-citation: 'Leung, Kristo, Ke Cheng, Junyao Zhang, Yipeng Cheng, Viet Hung Nguyen Cao, Shusuke Ioku, <b>Masanori Kikuchi</b>, Wen Long, and Charles Crabtree.'
+citation: 'Kristo Leung, Ke Cheng, Junyao Zhang, Yipeng Cheng, Viet Hung Nguyen Cao, Shusuke Ioku, <b>Masanori Kikuchi</b>, Wen Long, and Charles Crabtree.'
 ---
