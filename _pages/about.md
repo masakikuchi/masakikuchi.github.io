@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Welcome! I am an incoming PhD student in the [Department of Political Science](https://polisci.wustl.edu/) at [Washington University in St. Louis](https://wustl.edu/). I was previously a Research Fellow for [Japan Society for the Promotion of Science](https://www.jsps.go.jp/english/e-pd/index.html).
+Welcome! I am aß PhD student in the [Department of Political Science](https://polisci.wustl.edu/) at [Washington University in St. Louis](https://wustl.edu/). I was previously a Research Fellow for [Japan Society for the Promotion of Science](https://www.jsps.go.jp/english/e-pd/index.html).
 
 My research interests cover the links between international politics and identity, International Relations, and Political Psychology. <!---My work is forthcoming at *Journal of Peace Research*.--->
 
