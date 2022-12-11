@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-You can download my latest CV [here](https://www.dropbox.com/s/uheq7zykyafepkq/CV_Dec7.pdf?dl=0).
+You can download my latest CV [here](https://www.dropbox.com/s/u22x7gi9a281vfo/CV_Dec10th.pdf?dl=0).
 
 
 
