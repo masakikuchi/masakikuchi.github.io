@@ -3,8 +3,8 @@ title: "How Does War Affect Cultural Tolerance? Evidence from Concert Programs, 
 collection: publications
 permalink: /publication/War on Classical Music
 excerpt: ''
-date: 2022-06-24
+date: 2023-01-17
 venue: 'Journal of Peace Research'
-paperurl: ''
+paperurl: 'https://journals.sagepub.com/doi/10.1177/00223433221123362'
 citation: 'Masanori Kikuchi'
 ---
