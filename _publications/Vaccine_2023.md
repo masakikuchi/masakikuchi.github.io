@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/vaccination
 excerpt: ''
 date: 2023-03-08
-venue: 'forthcoming in BMC Public Health'
+venue: 'accepted at BMC Public Health'
 paperurl: ''
 citation: 'Masanori Kikuchi, Seiya Ishihara, and Masaru Kohno'
 ---
