@@ -6,5 +6,5 @@ excerpt: ''
 date: 2023-01-17
 venue: 'Journal of Peace Research'
 paperurl: 'https://journals.sagepub.com/doi/10.1177/00223433221123362'
-citation: 'Masanori Kikuchi'
+citation: '<b>Masanori Kikuchi</b>'
 ---

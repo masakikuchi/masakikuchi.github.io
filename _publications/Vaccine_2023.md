@@ -3,8 +3,8 @@ title: "Politics of COVID-19 Vaccination in Japan: How Governing Incumbents’ R
 collection: publications
 permalink: /publication/vaccination
 excerpt: ''
-date: 2023-03-08
-venue: 'accepted at BMC Public Health'
+date: 2023-03-17
+venue: 'BMC Public Health'
 paperurl: ''
-citation: 'Masanori Kikuchi, Seiya Ishihara, and Masaru Kohno'
+citation: '<b>Masanori Kikuchi</b>, Seiya Ishihara, and Masaru Kohno'
 ---
