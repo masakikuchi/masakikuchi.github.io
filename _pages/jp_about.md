@@ -1,11 +1,10 @@
 ---
-permalink: /
+permalink: /jp_about/
 title: "Japanese（日本語）"
 excerpt: "Japanese（日本語）"
 author_profile: true
 redirect_from: 
   - /jp_about/
-  - /jp_about.html
 ---
 
 # 自己紹介
