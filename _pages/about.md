@@ -15,6 +15,7 @@ I study international relations, exploring the links between international polit
 I received my BA (2019) and MA (2021) in Political Science from [Waseda University](https://www.waseda.jp/top/en/), Japan. Outside of work, I play the violin and root for Dodgers.
 
 
+[Japanese webpage here.（日本語版ページはこちらへ）](https://researchmap.jp/masanorikikuchi)
 
 <!---A data-driven  personal website
 ======
