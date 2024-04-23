@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Masanori Kikuchi"
-  avatar           : "IMG_1394.png"
+  avatar           : "Masanori_Kikuchi_2023.png"
   bio              : "PhD student in Political Science at Washington University in St. Louis"
   location         : "St. Louis, MO"
   employer         :
@@ -245,6 +245,14 @@ defaults:
       author_profile: true
       share: true
 
+  # _jp_about
+  - scope:
+      path: ""
+      type: jp_about
+    values:
+      layout: jp_about
+      author_profile: true
+      share: true
 
 # Sass/SCSS
 sass:
