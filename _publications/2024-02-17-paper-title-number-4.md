@@ -1,7 +1,7 @@
 ---
 title: "How Does War Affect Cultural Tolerance? Evidence from Concert Programs, 1900--60"
 collection: publications
-date: 2024-02-17
+date: 2024
 venue: 'Journal of Peace Research 61(2): 163-179 (Leading Article)'
 paperurl: '[http://academicpages.github.io/files/paper3.pdf](https://journals.sagepub.com/doi/10.1177/00223433221123362)'
 ---
