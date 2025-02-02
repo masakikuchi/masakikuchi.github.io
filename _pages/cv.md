@@ -9,4 +9,4 @@ redirect_from:
 
 {% include base_path %}
 
-You can download my latest CV [here](https://wustl.box.com/s/539011sicc6be42sv919p1g2lrdt143e).
+You can download my latest CV [here](https://wustl.box.com/s/zrwkkbvpx0mwm0gqz1pg4r08mhai34sh).
