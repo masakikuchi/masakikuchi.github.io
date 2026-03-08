@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 
-Welcome! I am a Ph.D. student in the [Department of Political Science](https://polisci.wustl.edu/) at [Washington University in St. Louis](https://wustl.edu/). I was previously a Research Fellow for [Japan Society for the Promotion of Science](https://www.jsps.go.jp/english/e-pd/index.html).
+Welcome! I am a Ph.D. candidate in the [Department of Political Science](https://polisci.wustl.edu/) at [Washington University in St. Louis](https://wustl.edu/). I was previously a Research Fellow for [Japan Society for the Promotion of Science](https://www.jsps.go.jp/english/e-pd/index.html).
 
 My research examines how international conflict reshapes domestic politics, with particular attention to how wartime experiences influence political behavior, foreign policy attitudes, and state-building processes over time. I employ survey experiments and computational methods to study the domestic consequences of international relations. My work has been published or is forthcoming in peer-reviewed journals, including *Journal of Peace Research* and *BMC Public Health*.
 
