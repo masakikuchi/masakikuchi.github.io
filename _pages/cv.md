@@ -8,13 +8,11 @@ redirect_from:
 ---
 {% include base_path %}
 
-You can download my latest CV [here](https://wustl.box.com/shared/static/gfsnpx5yyy0f4gx0iouxlrcni0dzpa0i.pdf).
+You can download my latest CV [here]({{ base_path }}/files/cv.pdf).
 
 <iframe 
-  src="https://wustl.box.com/shared/static/gfsnpx5yyy0f4gx0iouxlrcni0dzpa0i.pdf" 
+  src="{{ base_path }}/files/CV_May6_2026.pdf" 
   width="100%" 
   height="900" 
-  frameborder="0" 
-  allowfullscreen
-  style="margin-top: 1em;">
+  frameborder="0">
 </iframe>
