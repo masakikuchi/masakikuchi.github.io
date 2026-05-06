@@ -6,13 +6,12 @@ author_profile: true
 redirect_from:
   - /resume
 ---
-
 {% include base_path %}
 
-You can download my latest CV [here]([https://wustl.box.com/s/oqddazvfha5uhdqc3x9r1twdtz60u708](https://wustl.box.com/shared/static/gfsnpx5yyy0f4gx0iouxlrcni0dzpa0i.pdf)).
+You can download my latest CV [here](https://wustl.box.com/shared/static/gfsnpx5yyy0f4gx0iouxlrcni0dzpa0i.pdf).
 
 <iframe 
-  src="[https://wustl.app.box.com/embed/s/oqddazvfha5uhdqc3x9r1twdtz60u708](https://wustl.box.com/shared/static/gfsnpx5yyy0f4gx0iouxlrcni0dzpa0i.pdf)" 
+  src="https://wustl.box.com/shared/static/gfsnpx5yyy0f4gx0iouxlrcni0dzpa0i.pdf" 
   width="100%" 
   height="900" 
   frameborder="0" 
