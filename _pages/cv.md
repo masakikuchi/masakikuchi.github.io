@@ -11,7 +11,7 @@ redirect_from:
 You can download my latest CV [here]({{ base_path }}/files/cv.pdf).
 
 <iframe 
-  src="{{ base_path }}/files/CV_May6_2026.pdf" 
+  src="https://docs.google.com/viewer?url={{ site.url }}{{ base_path }}/files/cv.pdf&embedded=true" 
   width="100%" 
   height="900" 
   frameborder="0">
