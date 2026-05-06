@@ -8,10 +8,10 @@ redirect_from:
 ---
 {% include base_path %}
 
-You can download my latest CV [here]({{ base_path }}/files/cv.pdf).
+You can download my latest CV [here]({{ base_path }}/files/CV_May6_2026.pdf).
 
 <iframe 
-  src="https://docs.google.com/viewer?url={{ site.url }}{{ base_path }}/files/cv.pdf&embedded=true" 
+  src="https://docs.google.com/viewer?url={{ site.url }}{{ base_path }}/files/CV_May6_2026.pdf&embedded=true" 
   width="100%" 
   height="900" 
   frameborder="0">
