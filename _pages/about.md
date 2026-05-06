@@ -8,9 +8,9 @@ redirect_from:
 ---
 
 
-Welcome! I am a Ph.D. candidate in the [Department of Political Science](https://polisci.wustl.edu/) at [Washington University in St. Louis](https://wustl.edu/). I was previously a Research Fellow for [Japan Society for the Promotion of Science](https://www.jsps.go.jp/english/e-pd/index.html).
+Welcome! I am a Ph.D. Candidate in the [Department of Political Science](https://polisci.wustl.edu/) at [Washington University in St. Louis](https://wustl.edu/). I was previously a Research Fellow for [Japan Society for the Promotion of Science](https://www.jsps.go.jp/english/e-pd/index.html).
 
-My research examines how international conflict reshapes domestic politics, with particular attention to how wartime experiences influence political behavior, foreign policy attitudes, and state-building processes over time. I employ survey experiments and computational methods to study the domestic consequences of international relations. My work has been published or is forthcoming in peer-reviewed journals, including *Journal of Peace Research* and *BMC Public Health*.
+My research examines how international conflict shapes social cohesion and security attitudes. Across contexts, I study how people experience war—through sacrifice, victimization, collective memory, and media—and how these experiences reshape political identities, group boundaries, and views of the outside world. My dissertation focuses on unequal wartime burdens across subnational groups and their consequences for national cohesion, state-society relations, and intergroup relations. Methodologically, I draw on survey experiments, causal inference, and computational methods. My work has been published or is forthcoming in peer-reviewed journals, including *Journal of Peace Research* and *BMC Public Health*.
 
 
-I received my BA (2019) and MA (2021) in Political Science from [Waseda University](https://www.waseda.jp/top/en/), Japan. Outside of academic work, I enjoy playing the violin and cheering for Cardinals.
+I received my BA (2019) and MA (2021) in Political Science from [Waseda University](https://www.waseda.jp/top/en/), Japan. Outside of academic work, I enjoy playing the violin and cheering for the Cardinals.
