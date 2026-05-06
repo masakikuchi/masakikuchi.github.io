@@ -10,9 +10,11 @@ redirect_from:
 
 You can download my latest CV [here]({{ base_path }}/files/CV_May6_2026.pdf).
 
-<iframe 
-  src="https://docs.google.com/viewer?url={{ site.url }}{{ base_path }}/files/CV_May6_2026.pdf&embedded=true" 
+<object 
+  data="{{ base_path }}/files/CV_May6_2026.pdf" 
+  type="application/pdf" 
   width="100%" 
-  height="900" 
-  frameborder="0">
-</iframe>
+  height="900">
+  <p>Your browser doesn't support embedded PDFs. 
+  <a href="{{ base_path }}/files/CV_May6_2026.pdf">Download the CV instead.</a></p>
+</object>
