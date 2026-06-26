@@ -16,5 +16,5 @@ You can download my latest CV [here]({{ base_path }}/files/CV_June2026.pdf).
   width="100%" 
   height="900">
   <p>Your browser doesn't support embedded PDFs. 
-  <a href="{{ base_path }}/files/CV_Kikuchi_05282026.pdf">Download the CV instead.</a></p>
+  <a href="{{ base_path }}/files/CV_June2026.pdf">Download the CV instead.</a></p>
 </object>
