@@ -10,7 +10,7 @@ redirect_from:
 
 Welcome! I am a Ph.D. Candidate in the [Department of Political Science](https://polisci.wustl.edu/) at [Washington University in St. Louis](https://wustl.edu/). I was previously a Research Fellow for [Japan Society for the Promotion of Science](https://www.jsps.go.jp/english/e-pd/index.html).
 
-My research examines how international conflict reshapes domestic politics through social identity, asking how experiences of war and political violence shape public opinion, intergroup relations, and social cohesion. The dissertation advances this agenda by studying how unequal wartime burdens among subnational groups affect state-society relations and inter-group cohesion. Methodologically, I use observational data, survey experiments, and computational methods. My work has been published or is forthcoming in peer-reviewed journals, including *Journal of Peace Research* and *BMC Public Health*.
+I study how international conflict shapes domestic politics, asking how war and other forms of political violence affect public opinion, state-society relations, and intergroup relations. My dissertation develops this agenda by examining how the unequal distribution of wartime burdens among subnational groups affects support for the state and intergroup relations. Methodologically, I use observational data, survey experiments, and computational methods. My work has been published or is forthcoming in peer-reviewed journals, including *Journal of Peace Research* and *BMC Public Health*.
 
 
 I received my BA (2019) and MA (2021) in Political Science from [Waseda University](https://www.waseda.jp/top/en/), Japan. Outside of academic work, I enjoy playing the violin and cheering for the Cardinals.
