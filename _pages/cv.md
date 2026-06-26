@@ -8,10 +8,10 @@ redirect_from:
 ---
 {% include base_path %}
 
-You can download my latest CV [here]({{ base_path }}/files/CV_May6_2026.pdf).
+You can download my latest CV [here]({{ base_path }}/files/CV_June2026.pdf).
 
 <object 
-  data="{{ base_path }}/files/CV_Kikuchi_05282026.pdf" 
+  data="{{ base_path }}/files/CV_June2026.pdf" 
   type="application/pdf" 
   width="100%" 
   height="900">
