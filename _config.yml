@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Masanori Kikuchi"
 title_separator          : "-"
 name                     : &name "Masanori Kikuchi"
-description              : &description "personal description"
+description              : &description "Political scientist studying how international conflict reshapes domestic politics, public opinion, and intergroup relations."
 url                      : https://masakikuchi.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "masakikuchi.github.io"
@@ -24,7 +24,7 @@ author:
   avatar           : "pic_MK.png"
   name             : "Masanori Kikuchi"
   pronouns         : # example: "she/her"  
-  bio              : "Ph.D. candidate in Political Science at Washington University in St. Louis"
+  bio              : "Political scientist studying conflict, public opinion, and intergroup relations"
   location         : "St. Louis, MO"
   employer         : 
   uri              : # URL

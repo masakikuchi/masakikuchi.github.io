@@ -1,10 +1,12 @@
 ---
-layout: archive
+layout: home
 title: "Publications"
 permalink: /publications/
-author_profile: true
+author_profile: false
+body_class: plain-theme
 ---
 
+<section class="mk-section mk-section--page">
 {% if site.author.googlescholar %}
   <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
 {% endif %}
@@ -31,6 +33,4 @@ author_profile: true
     {% include archive-single.html %}
   {% endfor %}
 {% endif %}
-
-
-
+</section>
