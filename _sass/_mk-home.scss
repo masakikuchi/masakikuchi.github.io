@@ -55,11 +55,7 @@
 }
 
 .plain-theme .greedy-nav .visible-links a:before,
-.plain-theme .greedy-nav .visible-links a:after,
-.plain-theme .greedy-nav button,
-.plain-theme .navicon,
-.plain-theme .navicon:before,
-.plain-theme .navicon:after {
+.plain-theme .greedy-nav .visible-links a:after {
   display: none !important;
 }
 
@@ -229,6 +225,20 @@
 
   .plain-theme .greedy-nav {
     min-height: 3.25rem;
+  }
+
+  .plain-theme .greedy-nav button {
+    background: transparent;
+    color: var(--mk-ink);
+    display: block !important;
+    padding-right: 0;
+  }
+
+  .plain-theme .navicon,
+  .plain-theme .navicon:before,
+  .plain-theme .navicon:after {
+    background: var(--mk-ink);
+    display: block !important;
   }
 
   .plain-theme .greedy-nav .visible-links li {
