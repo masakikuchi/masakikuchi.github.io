@@ -175,6 +175,33 @@
   margin-top: -0.35rem;
 }
 
+.mk-research-awards {
+  background: #faf6f7;
+  border-left: 4px solid var(--mk-accent);
+  margin: 0.75rem 0 1rem;
+  padding: 0.75rem 1rem;
+}
+
+.mk-research-awards__heading {
+  color: var(--mk-accent);
+  font-family: Arial, sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.mk-research-awards ul {
+  margin: 0.35rem 0 0 1.25rem;
+}
+
+.mk-research-awards li {
+  margin-bottom: 0.25rem;
+}
+
+.mk-research-awards li:last-child {
+  margin-bottom: 0;
+}
+
 .plain-theme .wordwrap {
   margin-bottom: 1.5rem;
 }
