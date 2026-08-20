@@ -5,6 +5,7 @@ category: manuscripts
 status: published
 permalink: /publication/vaccination
 date: 2023-03-17
+coauthors: 'Seiya Ishihara and Masaru Kohno'
 venue: 'BMC Public Health'
 paperurl: 'https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-023-15376-6'
 appendixurl: 'https://media.springernature.com/original/springer-static/esm/art%3A10.1186%2Fs12889-023-15376-6/MediaObjects/12889_2023_15376_MOESM1_ESM.docx'
