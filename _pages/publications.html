@@ -1,36 +1,111 @@
 ---
 layout: home
-title: "Publications"
+title: "Research"
 permalink: /publications/
 author_profile: false
 body_class: plain-theme
 ---
 
 <section class="mk-section mk-section--page">
+<h1 class="mk-display">Research</h1>
+<div class="mk-research-intro">
+  <h2>Research Interests</h2>
+  <p>I study the mass politics of international security, asking how war and political violence shape public opinion, state–society relations, and intergroup relations. My dissertation examines how the unequal distribution of wartime burdens across social groups and regions affects social cohesion, and how group identities condition those effects. Methodologically, I combine observational causal inference, survey experiments, and computational text analysis.</p>
+</div>
+
 {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+  <div class="wordwrap">You can also find my work on <a href="{{site.author.googlescholar}}">Google Scholar</a>.</div>
 {% endif %}
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
+{% assign published_count = 0 %}
+{% assign forthcoming_count = 0 %}
+{% assign work_in_progress_count = 0 %}
+{% for post in site.publications %}
+  {% if post.status == "forthcoming" %}
+    {% assign forthcoming_count = forthcoming_count | plus: 1 %}
+  {% elsif post.status == "work-in-progress" %}
+    {% assign work_in_progress_count = work_in_progress_count | plus: 1 %}
+  {% else %}
+    {% assign published_count = published_count | plus: 1 %}
+  {% endif %}
+{% endfor %}
+
+<div class="mk-research-filters" role="group" aria-label="Filter research by publication status">
+  <button type="button" class="mk-research-filter" data-status-filter="all" aria-pressed="true">All ({{ site.publications | size }})</button>
+  <button type="button" class="mk-research-filter" data-status-filter="forthcoming" aria-pressed="false">Forthcoming ({{ forthcoming_count }})</button>
+  <button type="button" class="mk-research-filter" data-status-filter="published" aria-pressed="false">Published ({{ published_count }})</button>
+  <button type="button" class="mk-research-filter" data-status-filter="work-in-progress" aria-pressed="false">Work in Progress ({{ work_in_progress_count }})</button>
+</div>
+
+<p class="mk-research-empty" data-research-empty hidden>No research is listed for this status yet.</p>
+
+<!-- Render publications by category when categories are defined. -->
 {% if site.publication_category %}
   {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
+    {% assign category_posts = site.publications | where: "category", category[0] %}
+    {% if category_posts.size > 0 %}
+      <section class="mk-research-category">
         <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
+        {% for post in category_posts reversed %}
+          <div class="mk-research-item" data-publication-status="{{ post.status | default: 'published' }}">
+            {% include archive-single.html %}
+          </div>
+        {% endfor %}
+      </section>
+    {% elsif category[0] == "working" %}
+      <section class="mk-research-category" data-empty-status="work-in-progress">
+        <h2>{{ category[1].title }}</h2><hr />
+        <p class="mk-research-placeholder">Work-in-progress projects will be added here.</p>
+      </section>
+    {% endif %}
   {% endfor %}
 {% else %}
   {% for post in site.publications reversed %}
-    {% include archive-single.html %}
+    <div class="mk-research-item" data-publication-status="{{ post.status | default: 'published' }}">
+      {% include archive-single.html %}
+    </div>
   {% endfor %}
 {% endif %}
 </section>
+
+<script>
+  (function () {
+    var buttons = document.querySelectorAll("[data-status-filter]");
+    var items = document.querySelectorAll("[data-publication-status]");
+    var categories = document.querySelectorAll(".mk-research-category");
+    var emptyMessage = document.querySelector("[data-research-empty]");
+
+    buttons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        var selectedStatus = button.getAttribute("data-status-filter");
+        var visibleCount = 0;
+        var hasVisibleEmptyCategory = false;
+
+        buttons.forEach(function (candidate) {
+          candidate.setAttribute("aria-pressed", candidate === button ? "true" : "false");
+        });
+
+        items.forEach(function (item) {
+          var isVisible = selectedStatus === "all" || item.getAttribute("data-publication-status") === selectedStatus;
+          item.hidden = !isVisible;
+          if (isVisible) visibleCount += 1;
+        });
+
+        categories.forEach(function (category) {
+          var categoryItems = category.querySelectorAll("[data-publication-status]");
+          var hasVisibleItem = Array.prototype.some.call(categoryItems, function (item) {
+            return !item.hidden;
+          });
+          var emptyStatus = category.getAttribute("data-empty-status");
+          var showEmptyCategory = categoryItems.length === 0 && (selectedStatus === "all" || selectedStatus === emptyStatus);
+          category.hidden = !hasVisibleItem && !showEmptyCategory;
+          if (showEmptyCategory) hasVisibleEmptyCategory = true;
+        });
+
+        emptyMessage.hidden = visibleCount !== 0 || hasVisibleEmptyCategory;
+      });
+    });
+  }());
+</script>

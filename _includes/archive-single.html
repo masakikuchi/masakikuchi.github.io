@@ -42,6 +42,10 @@
 
         {% if post.collection == 'teaching' %}
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% elsif post.collection == 'publications' and post.status == 'work-in-progress' %}
+          <p>Work in progress{% if post.venue %} · <i>{{ post.venue }}</i>{% endif %}</p>
+        {% elsif post.collection == 'publications' and post.status == 'forthcoming' %}
+          <p>Forthcoming in <i>{{ post.venue }}</i>{% if post.date %}, {{ post.date | date: "%Y" }}{% endif %}</p>
         {% elsif post.collection == 'publications' %}
           <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.date %}
@@ -66,6 +70,15 @@
       <p><a href=" {{ post.paperurl }} ">Download Paper</a></p>
     {% elsif post.slidesurl %}
       <p>Download <a href="{{ post.slidesurl }}">Download Slides</a></p></p>
+    {% endif %}
+
+    {% if post.collection == 'publications' and post.summary %}
+      <details class="mk-research-summary">
+        <summary>Read summary</summary>
+        <div class="mk-research-summary__content" itemprop="description">
+          {{ post.summary | markdownify }}
+        </div>
+      </details>
     {% endif %}
 
   </article>
