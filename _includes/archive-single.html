@@ -12,6 +12,13 @@
   {% assign title = post.title %}
 {% endif %}
 
+{% assign has_paperurl = false %}
+{% assign has_appendixurl = false %}
+{% assign has_slidesurl = false %}
+{% if post.paperurl and post.paperurl != empty %}{% assign has_paperurl = true %}{% endif %}
+{% if post.appendixurl and post.appendixurl != empty %}{% assign has_appendixurl = true %}{% endif %}
+{% if post.slidesurl and post.slidesurl != empty %}{% assign has_slidesurl = true %}{% endif %}
+
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
@@ -27,7 +34,7 @@
     {% endif %}
 
     <h2 class="archive__item-title" itemprop="headline">
-      {% if post.paperurl %}
+      {% if has_paperurl %}
         <a href="{{ post.paperurl }}">{{ title }}</a>
       {% elsif post.link %}
         <a href="{{ post.link }}">{{ title }}</a>
@@ -58,7 +65,22 @@
     <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% endif %}
     
-    {% if post.citation and post.paperurl and post.slidesurl %}
+    {% if post.collection == 'publications' %}
+      {% if post.citation %}
+        <p>Recommended citation: {{ post.citation }}</p>
+      {% endif %}
+      {% if has_paperurl or has_appendixurl or has_slidesurl %}
+        <p class="mk-research-links">
+          {% if has_paperurl %}<a href="{{ post.paperurl }}">Main text</a>{% endif %}
+          {% if has_paperurl and has_appendixurl %}<span aria-hidden="true"> | </span>{% endif %}
+          {% if has_appendixurl %}<a href="{{ post.appendixurl }}">Appendix</a>{% endif %}
+          {% if has_slidesurl %}
+            {% if has_paperurl or has_appendixurl %}<span aria-hidden="true"> | </span>{% endif %}
+            <a href="{{ post.slidesurl }}">Slides</a>
+          {% endif %}
+        </p>
+      {% endif %}
+    {% elsif post.citation and post.paperurl and post.slidesurl %}
       <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a></p>
     {% elsif post.citation and post.paperurl %}
       <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a></p>
@@ -67,9 +89,9 @@
     {% elsif post.citation %}
       <p>Recommended citation: {{ post.citation }}</p>
     {% elsif post.paperurl %}
-      <p><a href=" {{ post.paperurl }} ">Download Paper</a></p>
+      <p><a href="{{ post.paperurl }}">Download Paper</a></p>
     {% elsif post.slidesurl %}
-      <p>Download <a href="{{ post.slidesurl }}">Download Slides</a></p></p>
+      <p><a href="{{ post.slidesurl }}">Download Slides</a></p>
     {% endif %}
 
     {% if post.collection == 'publications' and post.summary %}
