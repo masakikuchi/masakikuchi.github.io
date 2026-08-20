@@ -10,7 +10,7 @@ redirect_from:
 {% include base_path %}
 
 <section class="mk-section mk-section--page">
-<p>You can download my latest CV <a href="{{ base_path }}/files/CV_June2026.pdf">here</a>.</p>
+<p>You can download my latest CV <a href="{{ base_path }}/files/CV_08202026.pdf">here</a>.</p>
 
 <object 
   class="mk-cv-object"
