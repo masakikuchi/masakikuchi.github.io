@@ -6,6 +6,7 @@ status: forthcoming
 permalink: /publication/Beyond the Battlefield
 date: 2026-08-20
 venue: 'International Organization'
+coauthors: 'Carly N. Wayne, Sivan Hirsch-Hoefler, and Daphna Canetti'
 paperurl: 'https://www.dropbox.com/scl/fi/3g8iz4ltjfxw22kt6m23t/main-text_Settler-Violence.pdf?rlkey=g4ok0thtccbk4le8ghuc73183&st=h9xsb08m&dl=0'
 appendixurl: 'https://www.dropbox.com/scl/fi/nqgg013xxz24p3pv4ohjj/appendix_Settler-Violence.pdf?rlkey=ln819rupuy3mfe78n48zdsvnp&st=oem70c5e&dl=0'
 summary: >-
