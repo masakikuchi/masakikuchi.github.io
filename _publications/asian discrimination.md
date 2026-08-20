@@ -6,6 +6,7 @@ status: published
 permalink: /publication/Asian discrimination
 date: 2021-10-04
 venue: 'Socius'
+coauthors: 'Kristo Leung, Ke Cheng, Junyao Zhang, Yipeng Cheng, Viet Hung Nguyen Cao, Shusuke Ioku, Wen Long, and Charles Crabtree'
 paperurl: 'https://journals.sagepub.com/doi/full/10.1177/23780231211048023'
 appendixurl: 'https://journals.sagepub.com/doi/suppl/10.1177/23780231211048023'
 summary: >-
