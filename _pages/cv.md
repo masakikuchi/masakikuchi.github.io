@@ -14,11 +14,11 @@ redirect_from:
 
 <object 
   class="mk-cv-object"
-  data="{{ base_path }}/files/CV_June2026.pdf" 
+  data="{{ base_path }}/files/CV_08202026.pdf" 
   type="application/pdf" 
   width="100%" 
   height="900">
   <p>Your browser doesn't support embedded PDFs. 
-  <a href="{{ base_path }}/files/CV_June2026.pdf">Download the CV instead.</a></p>
+  <a href="{{ base_path }}/files/CV_08202026.pdf">Download the CV instead.</a></p>
 </object>
 </section>
