@@ -55,6 +55,10 @@
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.collection == 'publications' and post.status == 'work-in-progress' %}
           <p>Work in progress{% if post.venue %} · <i>{{ post.venue }}</i>{% endif %}</p>
+        {% elsif post.collection == 'publications' and post.status == 'under-review' %}
+          <p>Under review{% if post.venue %} at <i>{{ post.venue }}</i>{% endif %}</p>
+        {% elsif post.collection == 'publications' and post.status == 'revise-and-resubmit' %}
+          <p>Revise and resubmit{% if post.venue %} at <i>{{ post.venue }}</i>{% endif %}</p>
         {% elsif post.collection == 'publications' and post.status == 'forthcoming' %}
           <p>Forthcoming in <i>{{ post.venue }}</i>{% if post.date %}, {{ post.date | date: "%Y" }}{% endif %}</p>
         {% elsif post.collection == 'publications' %}

@@ -21,10 +21,16 @@ body_class: plain-theme
 
 {% assign published_count = 0 %}
 {% assign forthcoming_count = 0 %}
+{% assign under_review_count = 0 %}
+{% assign revise_and_resubmit_count = 0 %}
 {% assign work_in_progress_count = 0 %}
 {% for post in site.publications %}
   {% if post.status == "forthcoming" %}
     {% assign forthcoming_count = forthcoming_count | plus: 1 %}
+  {% elsif post.status == "under-review" %}
+    {% assign under_review_count = under_review_count | plus: 1 %}
+  {% elsif post.status == "revise-and-resubmit" %}
+    {% assign revise_and_resubmit_count = revise_and_resubmit_count | plus: 1 %}
   {% elsif post.status == "work-in-progress" %}
     {% assign work_in_progress_count = work_in_progress_count | plus: 1 %}
   {% else %}
@@ -36,6 +42,8 @@ body_class: plain-theme
   <button type="button" class="mk-research-filter" data-status-filter="all" aria-pressed="true">All ({{ site.publications | size }})</button>
   <button type="button" class="mk-research-filter" data-status-filter="forthcoming" aria-pressed="false">Forthcoming ({{ forthcoming_count }})</button>
   <button type="button" class="mk-research-filter" data-status-filter="published" aria-pressed="false">Published ({{ published_count }})</button>
+  <button type="button" class="mk-research-filter" data-status-filter="under-review" aria-pressed="false">Under Review ({{ under_review_count }})</button>
+  <button type="button" class="mk-research-filter" data-status-filter="revise-and-resubmit" aria-pressed="false">Revise and Resubmit ({{ revise_and_resubmit_count }})</button>
   <button type="button" class="mk-research-filter" data-status-filter="work-in-progress" aria-pressed="false">Work in Progress ({{ work_in_progress_count }})</button>
 </div>
 
