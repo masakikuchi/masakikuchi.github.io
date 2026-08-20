@@ -202,6 +202,16 @@
   margin-bottom: 0;
 }
 
+.mk-research-status--rr {
+  background: var(--mk-accent);
+  color: #ffffff;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.2rem 0.45rem;
+}
+
 .plain-theme .wordwrap {
   margin-bottom: 1.5rem;
 }
@@ -297,13 +307,14 @@
 
 .mk-research-summary summary {
   align-items: center;
-  border: 1px solid var(--mk-accent);
-  color: var(--mk-accent);
+  background: #f2f2f2;
+  border: 0;
+  color: #666666;
   cursor: pointer;
   display: inline-flex;
   font-family: Arial, sans-serif;
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-size: 0.88rem;
+  font-weight: 400;
   gap: 0.5rem;
   list-style: none;
   padding: 0.45rem 0.75rem;
@@ -325,9 +336,10 @@
 
 .mk-research-summary summary:hover,
 .mk-research-summary summary:focus-visible {
-  background: var(--mk-accent);
-  color: #ffffff;
-  outline: none;
+  background: #e5e5e5;
+  color: var(--mk-ink);
+  outline: 1px solid #999999;
+  outline-offset: 1px;
   text-decoration: none;
 }
 
