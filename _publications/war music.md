@@ -1,5 +1,5 @@
 ---
-title: "How Does War Affect Cultural Tolerance? Evidence from Concert Programs, 1900--1960"
+title: 'How Does War Affect Cultural Tolerance? Evidence from Concert Programs, 1900--1960'
 collection: publications
 category: manuscripts
 status: published
