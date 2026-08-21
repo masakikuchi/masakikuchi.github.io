@@ -172,14 +172,14 @@
 
 .mk-research-coauthors {
   font-style: italic;
-  margin-top: -0.35rem;
+  margin: 0 0 0.35rem;
 }
 
 .mk-research-awards {
   background: #faf6f7;
   border-left: 4px solid var(--mk-accent);
-  margin: 0.75rem 0 1rem;
-  padding: 0.75rem 1rem;
+  margin: 0.45rem 0 0.6rem;
+  padding: 0.55rem 0.75rem;
 }
 
 .mk-research-awards__heading {
@@ -191,7 +191,7 @@
 }
 
 .mk-research-awards ul {
-  margin: 0.35rem 0 0 1.25rem;
+  margin: 0.25rem 0 0 1.1rem;
 }
 
 .mk-research-awards li {
@@ -283,20 +283,20 @@
 }
 
 .plain-theme .mk-research-item .archive__item-title {
-  font-size: 1.08rem;
-  line-height: 1.3;
-  margin-bottom: 0.35rem;
+  font-size: 1.02rem;
+  line-height: 1.25;
+  margin-bottom: 0.25rem;
 }
 
 .plain-theme .mk-research-item .archive__item {
-  margin-bottom: 1rem;
-  padding: 0.9rem 1rem;
+  margin-bottom: 0.75rem;
+  padding: 0.7rem 0.85rem;
 }
 
 .plain-theme .mk-research-item .archive__item > p {
-  font-size: 0.94rem;
-  line-height: 1.5;
-  margin-bottom: 0.55rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 0.35rem;
 }
 
 .plain-theme .archive__item-title a,
@@ -319,7 +319,7 @@
 }
 
 .mk-research-summary {
-  margin-top: 0.65rem;
+  margin-top: 0.4rem;
 }
 
 .mk-research-summary summary {
@@ -334,7 +334,7 @@
   font-weight: 400;
   gap: 0.5rem;
   list-style: none;
-  padding: 0.45rem 0.75rem;
+  padding: 0.35rem 0.6rem;
 }
 
 .mk-research-summary summary::-webkit-details-marker {
