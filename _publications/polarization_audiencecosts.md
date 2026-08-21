@@ -6,8 +6,6 @@ status: work-in-progress
 permalink: /publication/polirization_audiencecosts
 coauthors: "Taylor N. Carlson and David B. Carter"
 date: 2026-08-21
-summary: >-
-  
 ---
 
 
