@@ -2,7 +2,7 @@
 title: "Does War Unite or Divide? Unequal Sacrifice and Wartime Support in Russia"
 collection: publications
 category: working
-status: work-in-progress
+status: working-paper
 permalink: /publication/WBD_Russia
 date: 2026-08-21
 summary: >-
