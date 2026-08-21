@@ -3,7 +3,9 @@ title: 'Legacies of the Atomic Bombings: Wartime Violence and Foreign Policy Att
 collection: publications
 category: working
 status: revise-and-resubmit
-permalink: /publication/WBD_Russia
+permalink: /publication/abomb_legacy
+paperurl: 'https://wustl.box.com/s/xxfh2uqrcsba9catzfh607q3o1ytj5c2'
+appendixurl: 'https://wustl.box.com/s/jx6d1nvj7p4xtlj25dt1am2lvrs22vvs'
 date: 2026-07-31
 summary: >-
   Does large-scale violence amid interstate war leave an enduring influence on public attitudes toward foreign policy? This study examines the long-term impact of the atomic bombings of Hiroshima and Nagasaki during World War II. I argue that exposure to such devastation makes survivors more risk-averse, reinforces moral opposition to war, and diminishes support for aggressive foreign policy, and that these attitudes are transmitted across generations through familial and community-level channels. Using original survey data from Japan, I find that the two channels are associated with distinct foreign policy orientations. Familial ties are associated with skepticism toward conventional military expansion but not with attitudes toward nuclear weapons, whereas community-level exposure is most consistently associated with opposition to nuclear weapons. The legacy of the atomic bombings is thus not uniform but channel-specific, with families and community institutions transmitting different orientations and community exposure most closely tied to the durable anti-nuclear stance.
