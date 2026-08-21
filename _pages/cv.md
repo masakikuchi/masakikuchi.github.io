@@ -10,15 +10,15 @@ redirect_from:
 {% include base_path %}
 
 <section class="mk-section mk-section--page">
-<p>You can download my latest CV <a href="{{ base_path }}/files/CV_08202026.pdf">here</a>.</p>
+<p>You can download my latest CV <a href="{{ base_path }}/files/CV_08212026.pdf">here</a>.</p>
 
 <object 
   class="mk-cv-object"
-  data="{{ base_path }}/files/CV_08202026.pdf" 
+  data="{{ base_path }}/files/CV_08212026.pdf" 
   type="application/pdf" 
   width="100%" 
   height="900">
   <p>Your browser doesn't support embedded PDFs. 
-  <a href="{{ base_path }}/files/CV_08202026.pdf">Download the CV instead.</a></p>
+  <a href="{{ base_path }}/files/CV_08212026.pdf">Download the CV instead.</a></p>
 </object>
 </section>
