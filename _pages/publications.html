@@ -61,9 +61,34 @@ body_class: plain-theme
 <section class="mk-research-category" data-empty-status="working">
   <h2>Working Papers</h2><hr />
   {% if working_count > 0 %}
+    <!-- R&R papers always appear first, followed by under-review and regular working papers. -->
     {% for post in site.publications reversed %}
       {% assign publication_status = post.status | default: "published" %}
-      {% unless publication_status == "published" or publication_status == "forthcoming" or publication_status == "work-in-progress" %}
+      {% if publication_status == "revise-and-resubmit" %}
+        <div class="mk-research-item" data-publication-status="working">
+          {% include archive-single.html %}
+        </div>
+      {% endif %}
+    {% endfor %}
+    {% for post in site.publications reversed %}
+      {% assign publication_status = post.status | default: "published" %}
+      {% if publication_status == "under-review" %}
+        <div class="mk-research-item" data-publication-status="working">
+          {% include archive-single.html %}
+        </div>
+      {% endif %}
+    {% endfor %}
+    {% for post in site.publications reversed %}
+      {% assign publication_status = post.status | default: "published" %}
+      {% if publication_status == "working-paper" %}
+        <div class="mk-research-item" data-publication-status="working">
+          {% include archive-single.html %}
+        </div>
+      {% endif %}
+    {% endfor %}
+    {% for post in site.publications reversed %}
+      {% assign publication_status = post.status | default: "published" %}
+      {% unless publication_status == "published" or publication_status == "forthcoming" or publication_status == "work-in-progress" or publication_status == "revise-and-resubmit" or publication_status == "under-review" or publication_status == "working-paper" %}
         <div class="mk-research-item" data-publication-status="working">
           {% include archive-single.html %}
         </div>
