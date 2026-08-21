@@ -21,10 +21,13 @@ body_class: plain-theme
 
 {% assign published_count = 0 %}
 {% assign working_count = 0 %}
+{% assign progress_count = 0 %}
 {% for post in site.publications %}
   {% assign publication_status = post.status | default: "published" %}
   {% if publication_status == "published" or publication_status == "forthcoming" %}
     {% assign published_count = published_count | plus: 1 %}
+  {% elsif publication_status == "work-in-progress" %}
+    {% assign progress_count = progress_count | plus: 1 %}
   {% else %}
     {% assign working_count = working_count | plus: 1 %}
   {% endif %}
@@ -34,47 +37,58 @@ body_class: plain-theme
   <button type="button" class="mk-research-filter" data-status-filter="all" aria-pressed="true">All ({{ site.publications | size }})</button>
   <button type="button" class="mk-research-filter" data-status-filter="published" aria-pressed="false">Published ({{ published_count }})</button>
   <button type="button" class="mk-research-filter" data-status-filter="working" aria-pressed="false">Working Papers ({{ working_count }})</button>
+  <button type="button" class="mk-research-filter" data-status-filter="progress" aria-pressed="false">Work in Progress ({{ progress_count }})</button>
 </div>
 
 <p class="mk-research-empty" data-research-empty hidden>No research is listed for this status yet.</p>
 
-<!-- Render publications by category when categories are defined. -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign category_posts = site.publications | where: "category", category[0] %}
-    {% if category_posts.size > 0 %}
-      <section class="mk-research-category">
-        <h2>{{ category[1].title }}</h2><hr />
-        {% for post in category_posts reversed %}
-          {% assign publication_status = post.status | default: "published" %}
-          {% assign filter_status = "working" %}
-          {% if publication_status == "published" or publication_status == "forthcoming" %}
-            {% assign filter_status = "published" %}
-          {% endif %}
-          <div class="mk-research-item" data-publication-status="{{ filter_status }}">
-            {% include archive-single.html %}
-          </div>
-        {% endfor %}
-      </section>
-    {% elsif category[0] == "working" %}
-      <section class="mk-research-category" data-empty-status="working">
-        <h2>{{ category[1].title }}</h2><hr />
-        <p class="mk-research-placeholder">Working papers will be added here.</p>
-      </section>
-    {% endif %}
-  {% endfor %}
-{% else %}
+<section class="mk-research-category" data-empty-status="published">
+  <h2>Published</h2><hr />
+  {% if published_count > 0 %}
   {% for post in site.publications reversed %}
     {% assign publication_status = post.status | default: "published" %}
-    {% assign filter_status = "working" %}
     {% if publication_status == "published" or publication_status == "forthcoming" %}
-      {% assign filter_status = "published" %}
+      <div class="mk-research-item" data-publication-status="published">
+        {% include archive-single.html %}
+      </div>
     {% endif %}
-    <div class="mk-research-item" data-publication-status="{{ filter_status }}">
-      {% include archive-single.html %}
-    </div>
   {% endfor %}
-{% endif %}
+  {% else %}
+    <p class="mk-research-placeholder">Published work will be added here.</p>
+  {% endif %}
+</section>
+
+<section class="mk-research-category" data-empty-status="working">
+  <h2>Working Papers</h2><hr />
+  {% if working_count > 0 %}
+    {% for post in site.publications reversed %}
+      {% assign publication_status = post.status | default: "published" %}
+      {% unless publication_status == "published" or publication_status == "forthcoming" or publication_status == "work-in-progress" %}
+        <div class="mk-research-item" data-publication-status="working">
+          {% include archive-single.html %}
+        </div>
+      {% endunless %}
+    {% endfor %}
+  {% else %}
+    <p class="mk-research-placeholder">Working papers will be added here.</p>
+  {% endif %}
+</section>
+
+<section class="mk-research-category" data-empty-status="progress">
+  <h2>Work in Progress</h2><hr />
+  {% if progress_count > 0 %}
+    {% for post in site.publications reversed %}
+      {% assign publication_status = post.status | default: "published" %}
+      {% if publication_status == "work-in-progress" %}
+        <div class="mk-research-item" data-publication-status="progress">
+          {% include archive-single.html %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  {% else %}
+    <p class="mk-research-placeholder">Work in progress will be added here.</p>
+  {% endif %}
+</section>
 </section>
 
 <script>
