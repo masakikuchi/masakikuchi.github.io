@@ -155,8 +155,10 @@
 }
 
 .mk-section--cv {
-  margin-top: 0;
+  margin: 0 auto;
+  max-width: 62rem;
   padding-top: 1rem;
+  width: 100%;
 }
 
 .plain-theme .page .mk-cv-download {
