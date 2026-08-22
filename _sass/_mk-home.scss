@@ -154,6 +154,22 @@
   padding: 2.5rem 0 0;
 }
 
+.mk-section--cv {
+  margin-top: 0;
+  padding-top: 1rem;
+}
+
+.plain-theme .page .mk-cv-download {
+  margin: 0 0 0.75rem;
+}
+
+.plain-theme .mk-cv-object {
+  display: block;
+  height: 78vh;
+  min-height: 650px;
+  width: 100%;
+}
+
 .mk-research-intro {
   border-bottom: 1px solid var(--mk-line);
   margin: 1.5rem 0;
@@ -268,6 +284,13 @@
 .plain-theme .mk-cv-object {
   border: 1px solid var(--mk-line);
   box-sizing: border-box;
+}
+
+@media (max-width: 37.5em) {
+  .plain-theme .mk-cv-object {
+    height: 72vh;
+    min-height: 500px;
+  }
 }
 
 .plain-theme .archive__item {

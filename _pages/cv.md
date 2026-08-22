@@ -9,11 +9,11 @@ redirect_from:
 ---
 {% include base_path %}
 
-<section class="mk-section mk-section--page">
-<p>You can download my latest CV <a href="{{ base_path }}/files/CV_08212026.pdf">here</a>.</p>
+<section class="mk-section mk-section--page mk-section--cv">
+<p class="mk-cv-download">You can download my latest CV <a href="{{ base_path }}/files/CV_08212026.pdf">here</a>.</p>
 
 <object 
-  class="mk-cv-object"
+  class="mk-cv-object fitvidsignore"
   data="{{ base_path }}/files/CV_08212026.pdf" 
   type="application/pdf" 
   width="100%" 
