@@ -20,6 +20,6 @@ redirect_from:
     <p class="mk-body">Please feel free to reach out by email at <a href="mailto:m.kikuchi@wustl.edu">m.kikuchi@wustl.edu</a> or connect with me on <a href="https://x.com/Mas_Kikuchi">X</a>.</p>
   </div>
   <div class="mk-hero__photo">
-    <img src="{{ base_path }}/images/prof_Sep1_2024.png" alt="Portrait of Masanori Kikuchi" class="mk-profile-photo">
+    <img src="{{ base_path }}/images/Masanori_Kikuchi_2023.png" alt="Portrait of Masanori Kikuchi" class="mk-profile-photo">
   </div>
 </section>
