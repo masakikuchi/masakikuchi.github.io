@@ -1,0 +1,52 @@
+# Add future teaching entries to the appropriate institution below.
+# Each entry supports: title, terms, instructor, and an optional description.
+
+- institution: "Washington University in St. Louis"
+  courses:
+    - title: "Sports, Policy, and Politics"
+      terms: "Spring 2026"
+      instructor: "Dr. Zachary Bowersox"
+
+    - title: "International Politics"
+      terms: "Fall 2025"
+      instructor: "Dr. Carly Wayne"
+
+    - title: "Game Theory and Strategies of Conflict"
+      terms: "Spring 2025"
+      instructor: "Dr. Xiaoyan Qiu"
+
+    - title: "Computational Social Science"
+      terms: "Fall 2024"
+      instructor: "Dr. Christopher Lucas"
+      description: "Co-led weekly lab sessions on statistical and computational methods."
+
+    - title: "Conflict and Security in International Relations"
+      terms: "Spring 2024"
+      instructor: "Dr. Xiaoyan Qiu"
+
+- institution: "Waseda University"
+  courses:
+    - title: "Quantitative Analysis in Political Science"
+      terms: "Spring 2021, Spring 2022"
+      instructor: "Dr. Susumu Annaka"
+      description: "Tutored students and answered questions on the statistical software R."
+
+    - title: "Statistics I"
+      terms: "Spring 2019, Spring 2020, Spring 2021"
+      instructor: "Dr. Yunkyu Sohn"
+      description: "Tutored students and answered questions on the statistical software R."
+
+    - title: "Statistics II"
+      terms: "Summer 2019, Summer 2020, Summer 2021"
+      instructor: "Dr. Yunkyu Sohn"
+      description: "Tutored students and answered questions on the statistical software R."
+
+    - title: "Network Analysis"
+      terms: "Winter 2019"
+      instructor: "Dr. Yunkyu Sohn"
+      description: "Tutored students and answered questions on the statistical software R."
+
+    - title: "Introduction to Political Analysis"
+      terms: "Spring 2021, Fall 2021, Spring 2022"
+      instructor: "Dr. Ikuo Kume"
+      description: "Independently led two weekly discussion sections in Japanese (approximately 20 students each, 45 minutes) and graded assignments and exams."

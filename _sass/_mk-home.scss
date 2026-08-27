@@ -172,6 +172,85 @@
   width: 100%;
 }
 
+.mk-teaching-page {
+  max-width: 68rem;
+}
+
+.mk-teaching-intro {
+  margin: 0.75rem 0 2rem;
+  max-width: 72ch;
+}
+
+.mk-teaching-group {
+  margin-top: 2rem;
+}
+
+.mk-teaching-group h2 {
+  border-bottom: 1px solid var(--mk-line);
+  font-size: 1.4rem;
+  margin: 0 0 0.25rem;
+  padding-bottom: 0.5rem;
+}
+
+.mk-teaching-item {
+  border-bottom: 1px solid var(--mk-line);
+  padding: 0.8rem 0;
+}
+
+.mk-teaching-item:last-child {
+  border-bottom: 0;
+}
+
+.mk-teaching-item__header {
+  align-items: baseline;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.mk-teaching-item h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 0;
+}
+
+.mk-teaching-terms {
+  color: var(--mk-muted);
+  flex: 0 0 auto;
+  font-family: Arial, sans-serif;
+  font-size: 0.86rem;
+  white-space: nowrap;
+}
+
+.plain-theme .page .mk-teaching-instructor,
+.plain-theme .page .mk-teaching-description {
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.plain-theme .page .mk-teaching-instructor {
+  margin: 0.25rem 0 0;
+}
+
+.plain-theme .page .mk-teaching-description {
+  margin: 0.2rem 0 0;
+}
+
+@media (max-width: 37.5em) {
+  .mk-teaching-item__header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .mk-teaching-terms {
+    white-space: normal;
+  }
+}
+
 .mk-research-intro {
   border-bottom: 1px solid var(--mk-line);
   margin: 1.5rem 0;

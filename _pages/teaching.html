@@ -1,12 +1,32 @@
 ---
-layout: archive
+layout: home
 title: "Teaching"
 permalink: /teaching/
-author_profile: true
+author_profile: false
+body_class: plain-theme
 ---
 
-{% include base_path %}
+<section class="mk-section mk-section--page mk-teaching-page">
+  <h1 class="mk-display">Teaching</h1>
+  <p class="mk-teaching-intro">Teaching assistantships and instructional experience in international relations, political methodology, and computational social science.</p>
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+  {% for group in site.data.teaching %}
+    <section class="mk-teaching-group">
+      <h2>{{ group.institution }}</h2>
+      <div class="mk-teaching-list">
+        {% for course in group.courses %}
+          <article class="mk-teaching-item">
+            <header class="mk-teaching-item__header">
+              <h3>{{ course.title }}</h3>
+              <span class="mk-teaching-terms">{{ course.terms }}</span>
+            </header>
+            <p class="mk-teaching-instructor">Instructor: {{ course.instructor }}</p>
+            {% if course.description %}
+              <p class="mk-teaching-description">{{ course.description }}</p>
+            {% endif %}
+          </article>
+        {% endfor %}
+      </div>
+    </section>
+  {% endfor %}
+</section>
