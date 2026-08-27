@@ -13,6 +13,9 @@ body_class: plain-theme
   {% for group in site.data.teaching %}
     <section class="mk-teaching-group">
       <h2>{{ group.institution }}</h2>
+      {% if group.note %}
+        <p class="mk-teaching-group-note">{{ group.note }}</p>
+      {% endif %}
       <div class="mk-teaching-list">
         {% for course in group.courses %}
           <article class="mk-teaching-item">

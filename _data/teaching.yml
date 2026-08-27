@@ -2,6 +2,7 @@
 # Each entry supports: title, terms, instructor, and an optional description.
 
 - institution: "Washington University in St. Louis"
+  note: "Responsibilities for all courses included grading assignments and exams."
   courses:
     - title: "Sports, Policy, and Politics"
       terms: "Spring 2026"
