@@ -173,7 +173,18 @@
 }
 
 .mk-teaching-page {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
   max-width: 68rem;
+}
+
+.mk-teaching-page .mk-display,
+.mk-teaching-page h2,
+.mk-teaching-page h3 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+}
+
+.mk-teaching-page .mk-display {
+  font-weight: 500;
 }
 
 .mk-teaching-intro {
@@ -187,7 +198,8 @@
 
 .mk-teaching-group h2 {
   border-bottom: 1px solid var(--mk-line);
-  font-size: 1.4rem;
+  font-size: 1.25rem;
+  font-weight: 600;
   margin: 0 0 0.25rem;
   padding-bottom: 0.5rem;
 }
@@ -209,9 +221,8 @@
 }
 
 .mk-teaching-item h3 {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.05rem;
-  font-style: italic;
+  font-size: 1rem;
+  font-style: normal;
   font-weight: 600;
   line-height: 1.35;
   margin: 0;
